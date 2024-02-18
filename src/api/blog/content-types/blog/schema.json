@@ -61,15 +61,8 @@
     "p5": {
       "type": "text"
     },
-    "img2": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "attention": {
+      "type": "text"
     }
   }
 }
