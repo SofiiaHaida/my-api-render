@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product"
+    "displayName": "product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,62 @@
       "type": "string"
     },
     "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "price": {
+      "type": "integer"
+    },
+    "isNew": {
+      "type": "boolean"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "brend": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "producer": {
+      "type": "string"
+    },
+    "composition": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "img2": {
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "products"
+    },
+    "sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sub-category.sub-category",
+      "inversedBy": "products"
     }
   }
 }
