@@ -17,7 +17,7 @@
       "required": true
     },
     "date": {
-      "type": "datetime",
+      "type": "date",
       "required": true
     },
     "img": {
@@ -65,24 +65,26 @@
       "type": "text"
     },
     "baner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "img2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

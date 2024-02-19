@@ -796,7 +796,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    date: Attribute.DateTime & Attribute.Required;
+    date: Attribute.Date & Attribute.Required;
     img: Attribute.Media;
     ul1: Attribute.String;
     p1: Attribute.Text;
