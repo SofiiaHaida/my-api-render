@@ -910,6 +910,8 @@ export interface ApiOrderOrder extends Schema.CollectionType {
         '\u0412\u0456\u0434\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E'
       ]
     >;
+    address: Attribute.Text;
+    total_price: Attribute.BigInteger;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -942,7 +944,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     img: Attribute.Media;
-    price: Attribute.Integer;
+    price: Attribute.BigInteger;
     isNew: Attribute.Boolean;
     weight: Attribute.String;
     brend: Attribute.String;

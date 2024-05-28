@@ -52,6 +52,12 @@
         "Готове до відправки",
         "Відправлено"
       ]
+    },
+    "address": {
+      "type": "text"
+    },
+    "total_price": {
+      "type": "biginteger"
     }
   }
 }

@@ -27,7 +27,7 @@
       ]
     },
     "price": {
-      "type": "integer"
+      "type": "biginteger"
     },
     "isNew": {
       "type": "boolean"
